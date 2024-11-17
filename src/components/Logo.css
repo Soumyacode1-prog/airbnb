@@ -1,0 +1,23 @@
+/* .custom-logo {
+    margin-left: -160px;
+    margin-top: 200px;
+    margin-right: -30px;
+  } */
+  .flex items-center{
+    margin-left:300px;
+    margin-right:100px ;
+    margin-bottom: 50px;
+  }
+  .custom-logo {
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100px; /* Adjust to your desired size */
+    height: 10px; /* Adjust to your desired size */
+    object-fit: cover;
+    margin-left:300px;
+    margin-right:100px ;
+    margin-bottom: 70px;
+    margin-top: 10px;
+  }
+  
+  
