@@ -6,9 +6,7 @@ import { Button } from "@/components/ui/button"
  import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs"
  import { ChevronDown } from 'lucide-react'
  import Link from "next/link"
-//  import React, { useState } from "react";
-// import { Tabs, Tab, Box ,Button} from "@mui/material"; // Material-UI components
-// import { ChevronDown } from "react-icons/fi"; 
+
 
 
 const categories = [

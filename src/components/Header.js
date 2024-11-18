@@ -1,53 +1,72 @@
-import React from 'react'
-import { Box } from '@mui/material'
-// import Container from '@mui/material'
+import React from 'react';
+import { Box } from '@mui/material';
 import Container from '@mui/material/Container';
 import Logo from './Logo';
-import{
-    flexBetweenCenter,dFlex,
-    displayOnDesktop} from '../themes/commonStyles';
+import {
+  flexBetweenCenter, dFlex,
+  displayOnDesktop
+} from '../themes/commonStyles';
 import LocationSearch from './LocationSearch';
 import ProfileSettings from './ProfileSettings';
 import MobileSearch from './MobileSearch';
-
-
+import Experience from './Experience';
 
 const Header = () => {
   return (
-    <Box sx={{
-        ...dFlex,
-        minHeight:70,
-        borderBottom:'1px solid #ddd',
+    <Box
+      sx={{
+        minHeight: 70,
+        borderBottom: '1px solid #ddd',
+      }}
+    >
+      <Container maxWidth="xl">
+        {/* First Row: Logo, Experience, ProfileSettings */}
+        <Box
+          sx={{
+            ...dFlex,
+            justifyContent: 'space-between',
+            alignItems: 'center',
+            minHeight: 70,
+            px: 4,
+          }}
+        >
+          {/* Logo Section */}
+          <Box sx={displayOnDesktop}>
+            <Logo />
+          </Box>
 
-    }}>
-        <Container maxWidth="xl">
-            <Box 
-            sx={{
-                ...flexBetweenCenter,
-                minHeight:70,
-                px:4,
+          {/* Experience Section */}
+          <Box sx={displayOnDesktop}>
+            <Experience />
+          </Box>
 
-            }}>
-                <Box sx={displayOnDesktop}>
-                    <Logo/>
-                </Box>
-                <Box sx={displayOnDesktop}>
-                  
-                <LocationSearch/>  
-                </Box>
-                <Box sx={displayOnDesktop}>
-                 
-                <ProfileSettings/>   
-                </Box>
-                <Box sx={{display:{xs:'flex',md:'none'}}}>
-                 <MobileSearch/>  
-                </Box>
+          {/* Profile Settings Section */}
+          <Box sx={displayOnDesktop}>
+            <ProfileSettings />
+          </Box>
 
-                
+          {/* Mobile Search (Visible on Mobile Only) */}
+          <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
+            <MobileSearch />
+          </Box>
+        </Box>
 
-        
-    </Box>
-    </Container>
+        {/* Second Row: LocationSearch */}
+        <Box
+          sx={{
+            ...dFlex,
+            justifyContent: 'center',
+            alignItems: 'center',
+            minHeight: 50,
+            px: 4,
+            mt: 1, // Add margin-top for spacing between rows
+          }}
+        >
+          <Box sx={displayOnDesktop}>
+            <LocationSearch />
+          </Box>
+        </Box>
+      </Container>
     </Box>
   );
 };
