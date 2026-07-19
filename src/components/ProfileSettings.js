@@ -33,7 +33,7 @@ const ProfileSettings = () => {
           marginRight: '16px',
         }}
       >
-        Airbnb your home ... helloo noidaa...
+        Airbnb your home Noida! hello ..
       </Link>
 
       {/* Icons Section */}
