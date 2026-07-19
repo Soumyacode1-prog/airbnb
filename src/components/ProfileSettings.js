@@ -33,7 +33,8 @@ const ProfileSettings = () => {
           marginRight: '16px',
         }}
       >
-        Airbnb your home Noida! hello ..
+        Airbnb your home Noida!
+        Shambhavi
       </Link>
 
       {/* Icons Section */}
