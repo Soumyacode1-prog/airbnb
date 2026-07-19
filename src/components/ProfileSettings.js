@@ -34,7 +34,7 @@ const ProfileSettings = () => {
         }}
       >
         Airbnb your home Noida!
-        Happy 
+        Shambhavi
       </Link>
 
       {/* Icons Section */}
